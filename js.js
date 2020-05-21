@@ -11,7 +11,7 @@ function prueba(val){
     var intereses = dinero * 0.025;
     var seguro = 2000 + dinero * 0.013;
     var administracion = 3000 + dinero * 0.0102;
-    var total = intereses + seguro + administracion;    
+    var total = dinero + intereses + seguro + administracion;    
     document.getElementById("intereses").innerHTML = "$ " + new Intl.NumberFormat("de-DE").format(intereses);
     document.getElementById("seguro").innerHTML = "$ " + new Intl.NumberFormat("de-DE").format(seguro);
     document.getElementById("administracion").innerHTML = "$ " + new Intl.NumberFormat("de-DE").format(administracion);
