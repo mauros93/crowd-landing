@@ -11,11 +11,12 @@ function prueba(val){
     var intereses = dinero * 0.025;
     var seguro = 2000 + dinero * 0.013;
     var administracion = 3000 + dinero * 0.0102;
-    var total = dinero + intereses + seguro + administracion;    
+    var total = Number(dinero) + Number(intereses) + Number(seguro) + Number(administracion);    
     document.getElementById("intereses").innerHTML = "$ " + new Intl.NumberFormat("de-DE").format(intereses);
     document.getElementById("seguro").innerHTML = "$ " + new Intl.NumberFormat("de-DE").format(seguro);
     document.getElementById("administracion").innerHTML = "$ " + new Intl.NumberFormat("de-DE").format(administracion);
-    document.getElementById("total").innerHTML = "$ " + new Intl.NumberFormat("de-DE").format(total);    
+    document.getElementById("total").innerHTML = "$ " + new Intl.NumberFormat("de-DE").format(total); 
+       
 }
 
 
